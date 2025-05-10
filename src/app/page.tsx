@@ -1,12 +1,17 @@
 'use client';
 
+import Container1 from './home/partials/container1';
+import Container2 from './home/partials/container2';
+import Hero from './home/partials/hero';
 import Navbar from './home/partials/navbar';
 
 const Home = () => {
   return (
-    <div className='h-[200vh]'>
+    <div>
       <Navbar />
-      <div className='bg-primary-200 mx-auto mt-50 h-50 w-50'></div>
+      <Hero />
+      <Container1 />
+      <Container2 />
     </div>
   );
 };

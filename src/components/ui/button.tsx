@@ -5,12 +5,12 @@ import * as React from 'react';
 import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
-  'flex gap-1.5 justify-center items-center shrink-0 disabled:pointer-events-none disabled:opacity-50',
+  'flex gap-1.5 justify-center items-center shrink-0 disabled:pointer-events-none disabled:opacity-50 cursor-pointer',
   {
     variants: {
       variant: {
         default:
-          'bg-gradient-purple-pink text-sm-medium md:text-md-medium text-neutral-100 rounded-full hover:shadow-[0_0_17px_rgba(135,70,235,0.55)]',
+          'bg-gradient-purple-pink text-sm-medium md:text-md-medium text-neutral-100 rounded-full hover:shadow-[0_0_17px_rgba(135,70,235,0.55)] max-md:w-full',
       },
       size: {
         default: 'h-12 px-12',

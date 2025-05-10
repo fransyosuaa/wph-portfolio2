@@ -1,4 +1,5 @@
 'use client';
+
 import { Menu } from 'lucide-react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import Image from 'next/image';
@@ -35,13 +36,19 @@ const Navbar = () => {
       style={{ background, backdropFilter }}
       className='fixed top-0 z-50 w-full'
     >
-      <div className='flex-between custom-container h-16 md:h-21'>
+      <div
+        className='flex-between custom-container'
+        style={{ height: 'clamp(4rem, 6.95vw, 5.25rem)' }}
+      >
         <Image
           src='/assets/images/logo.png'
           alt='logo'
           width={40}
           height={40}
-          className='max-md:h-7 max-md:w-7'
+          style={{
+            height: 'clamp(1.75rem, 3.31vw, 2.5rem)',
+            width: 'clamp(1.75rem, 3.31vw, 2.5rem)',
+          }}
         />
         <nav className='hidden lg:block'>
           <ul className='flex gap-6'>
