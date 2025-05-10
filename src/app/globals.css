@@ -86,7 +86,6 @@
 
   /* Background */
   --color-base-white: #ffffff;
-  --color-base-background: #0c0d0d;
 
   /* Radius */
   --radius-none: 0rem; /* 0px */
@@ -103,6 +102,8 @@
 
   /* Gradients */
   --gradient-purple-pink: linear-gradient(90deg, #dc49a6 0%, #8746eb 100%);
+  --color-gradient-from: #dc49a6;
+  --color-gradient-to: #8746eb;
 }
 /* design system Figma end */
 
@@ -214,7 +215,7 @@
 /* shadcn end */
 
 body {
-  @apply bg-base-background text-sm font-normal text-neutral-100;
+  @apply bg-neutral-600 text-sm font-normal text-neutral-100;
 
   font-family: var(--font-poppins);
 }

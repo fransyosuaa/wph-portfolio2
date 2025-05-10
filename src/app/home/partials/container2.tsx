@@ -2,6 +2,8 @@ import React from 'react';
 
 import HeaderSection from '@/components/ui/headerSection';
 
+import CareerHistory from './container2/careerHistory';
+
 const Container2 = () => {
   return (
     <section
@@ -12,7 +14,9 @@ const Container2 = () => {
         title='Career Journey'
         description='A visual timeline of key milestones and experiences from over the years.'
       />
-      <div></div>
+      <div className='mt-8 md:mt-12'>
+        <CareerHistory />
+      </div>
     </section>
   );
 };

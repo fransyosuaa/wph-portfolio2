@@ -12,7 +12,7 @@ function calculateClamp(minSizePx, maxSizePx, containerSizePx) {
 
 if (!minPx || !maxPx || !containerPx) {
   console.error(
-    'Usage: node clamp-calculator.js <minPx> <maxPx> <containerPx>'
+    'Usage: node clamp-calculator.js <containerPx> <minPx> <maxPx>'
   );
   process.exit(1);
 }
