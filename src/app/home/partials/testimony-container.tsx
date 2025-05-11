@@ -7,8 +7,7 @@ import MarqueeCard from './testimony/marquee-card';
 
 const TestimonyContainer = () => {
   return (
-    <section className='relative'>
-      {/* don't forget add overflow-hidden in <section> */}
+    <section className='relative overflow-hidden'>
       <Image
         src='/assets/images/container/testimony/ellipseBackground.png'
         alt='ellipse-purple'
