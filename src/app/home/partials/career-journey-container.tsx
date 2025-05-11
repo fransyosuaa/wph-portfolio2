@@ -2,9 +2,9 @@ import React from 'react';
 
 import HeaderSection from '@/components/ui/headerSection';
 
-import CareerHistory from './container2/careerHistory';
+import CareerHistory from './careerJourney/career-history';
 
-const Container2 = () => {
+const CareerJourneyContainer = () => {
   return (
     <section
       className='custom-container flex flex-col'
@@ -21,4 +21,4 @@ const Container2 = () => {
   );
 };
 
-export default Container2;
+export default CareerJourneyContainer;

@@ -1,9 +1,9 @@
-type Container1Data = {
+type BriefingContainerData = {
   title: string;
   description: string;
 };
 
-export const container1Data: Container1Data[] = [
+export const briefingData: BriefingContainerData[] = [
   {
     title: '14+',
     description: 'Years Experience',

@@ -29,11 +29,10 @@ const Hero = () => {
       />
       <Image
         src='/assets/images/waves.png'
-        alt='ellipse-purple-right'
+        alt='waves'
         width={1440}
         height={381}
-        className='absolute left-0 z-[-1] w-full bg-repeat-y'
-        style={{ top: 'clamp(27.5rem, 48.01vw, 36.25rem)' }}
+        className='absolute top-110 left-0 z-[-1] w-full bg-repeat-y md:top-145'
       />
       <Image
         src='/assets/images/hero/ellipseDot.png'
@@ -99,9 +98,8 @@ const Hero = () => {
         className='absolute top-150 right-295 z-[-1]'
       />
       <div
-        className='custom-container flex-center flex-col text-center'
+        className='custom-container flex-center mt-26 flex-col text-center md:mt-55.5'
         style={{
-          marginTop: 'clamp(6.5rem, 18.38vw, 13.88rem)',
           gap: 'clamp(1.25rem, 1.99vw, 1.5rem)',
         }}
       >
@@ -141,10 +139,9 @@ const Hero = () => {
             alt='photo'
             width={818}
             height={459}
-            className=''
           />
           <Image
-            src='/assets/icons/container/container1/playIcon.png'
+            src='/assets/icons/hero/playIcon.png'
             alt='play-icon'
             width={70}
             height={70}

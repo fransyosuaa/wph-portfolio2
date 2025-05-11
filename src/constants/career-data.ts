@@ -1,11 +1,11 @@
-type Container2Data = {
+type CareerJourneyData = {
   title: string;
   companyName: string;
   duration: string;
   jobDesc: string[];
 };
 
-export const container2Data: Container2Data[] = [
+export const careerJourneyData: CareerJourneyData[] = [
   {
     title: 'Senior Software Engineer',
     companyName: 'PT Achilles Advanced Systems',

@@ -2,9 +2,9 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 
-import { container2Data } from '@/constants/container2-data';
+import { careerJourneyData } from '@/constants/career-data';
 
-import CareerCard from './careerCard';
+import CareerCard from './career-card';
 
 const CareerHistory = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -39,8 +39,8 @@ const CareerHistory = () => {
         style={{ height: `${lineHeight}px` }}
       />
       <div ref={containerRef} className='flex flex-col gap-4 md:gap-6'>
-        {container2Data.map((data, index) => {
-          const isLast = index === container2Data.length - 1;
+        {careerJourneyData.map((data, index) => {
+          const isLast = index === careerJourneyData.length - 1;
           return (
             <div
               key={index}

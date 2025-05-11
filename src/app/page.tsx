@@ -1,7 +1,7 @@
 'use client';
 
-import Container1 from './home/partials/container1';
-import Container2 from './home/partials/container2';
+import BriefingContainer from './home/partials/briefing-container';
+import CareerJourneyContainer from './home/partials/career-journey-container';
 import Hero from './home/partials/hero';
 import Navbar from './home/partials/navbar';
 
@@ -10,8 +10,8 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
-      <Container1 />
-      <Container2 />
+      <BriefingContainer />
+      <CareerJourneyContainer />
     </div>
   );
 };

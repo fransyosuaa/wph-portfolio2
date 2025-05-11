@@ -2,9 +2,9 @@ import React from 'react';
 
 import CircleInfo from '@/components/ui/circleInfo';
 
-import { container1Data } from '@/constants/container1-data';
+import { briefingData } from '@/constants/briefing-data';
 
-const Container1 = () => {
+const BriefingContainer = () => {
   return (
     <section
       className='custom-container flex flex-col'
@@ -34,7 +34,7 @@ const Container1 = () => {
       </div>
       <div>
         <ul className='flex-center flex-wrap gap-3 md:gap-5'>
-          {container1Data.map((item, index) => {
+          {briefingData.map((item, index) => {
             const type = (index + 1) % 2 === 0 ? 'default' : 'outline';
             return (
               <li key={index}>
@@ -52,4 +52,4 @@ const Container1 = () => {
   );
 };
 
-export default Container1;
+export default BriefingContainer;
