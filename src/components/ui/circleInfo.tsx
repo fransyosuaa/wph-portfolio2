@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 type CircleInfoProps = {
@@ -26,12 +25,6 @@ const CircleInfo = ({ title, description, type }: CircleInfoProps) => {
       <p className='text-sm-regular md:text-md-regular'>{description}</p>
     </div>
   );
-};
-
-CircleInfo.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  type: PropTypes.string,
 };
 
 export default CircleInfo;

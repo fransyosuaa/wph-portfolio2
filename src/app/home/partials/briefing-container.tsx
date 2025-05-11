@@ -37,7 +37,10 @@ const BriefingContainer = () => {
           {briefingData.map((item, index) => {
             const type = (index + 1) % 2 === 0 ? 'default' : 'outline';
             return (
-              <li key={index}>
+              <li
+                key={index}
+                className='transform transition-transform duration-300 ease-in-out hover:scale-[1.07]'
+              >
                 <CircleInfo
                   title={item.title}
                   description={item.description}

@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import PropTypes from 'prop-types';
 import React from 'react';
 
 type CareerCardProps = {
@@ -51,13 +50,6 @@ const CareerCard = (props: CareerCardProps) => {
       </ul>
     </div>
   );
-};
-
-CareerCard.propTypes = {
-  title: PropTypes.string,
-  companyName: PropTypes.string,
-  duration: PropTypes.string,
-  jobDesc: PropTypes.array,
 };
 
 export default CareerCard;

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 type HeaderSectionProps = {
@@ -17,11 +16,6 @@ const HeaderSection = ({ title, description }: HeaderSectionProps) => {
       </p>
     </div>
   );
-};
-
-HeaderSection.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
 };
 
 export default HeaderSection;

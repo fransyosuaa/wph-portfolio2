@@ -41,6 +41,17 @@ const customTextPlugin = plugin(({ addUtilities }) => {
   addUtilities(newUtilities);
 });
 
+const marqueeConditionalGap = plugin(({ addUtilities }) => {
+  addUtilities(
+    {
+      '.gap-var': {
+        '--gap': '1rem',
+      },
+    },
+    ['responsive']
+  );
+});
+
 export default {
   theme: {
     extend: {
@@ -63,5 +74,5 @@ export default {
       },
     },
   },
-  plugins: [customTextPlugin],
+  plugins: [customTextPlugin, marqueeConditionalGap],
 } satisfies Config;

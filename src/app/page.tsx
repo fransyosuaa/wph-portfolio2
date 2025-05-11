@@ -4,6 +4,7 @@ import BriefingContainer from './home/partials/briefing-container';
 import CareerJourneyContainer from './home/partials/career-journey-container';
 import Hero from './home/partials/hero';
 import Navbar from './home/partials/navbar';
+import TestimonyContainer from './home/partials/testimony-container';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <BriefingContainer />
       <CareerJourneyContainer />
+      <TestimonyContainer />
     </div>
   );
 };

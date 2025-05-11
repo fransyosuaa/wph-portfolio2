@@ -239,6 +239,12 @@ body {
   .flex-start {
     @apply flex items-center justify-start;
   }
+
+  @media (min-width: 768px) {
+    .gap-var {
+      --gap: 1.25rem;
+    }
+  }
 }
 
 img {
