@@ -2,6 +2,7 @@
 
 import BriefingContainer from './home/partials/briefing-container';
 import CareerJourneyContainer from './home/partials/career-journey-container';
+import ComparisonContainer from './home/partials/comparison-container';
 import Footer from './home/partials/footer';
 import Hero from './home/partials/hero';
 import Navbar from './home/partials/navbar';
@@ -14,6 +15,7 @@ const Home = () => {
       <Hero />
       <BriefingContainer />
       <CareerJourneyContainer />
+      <ComparisonContainer />
       <TestimonyContainer />
       <Footer />
     </div>

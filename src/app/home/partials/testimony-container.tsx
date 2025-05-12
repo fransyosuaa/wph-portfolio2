@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-import HeaderSection from '@/components/ui/headerSection';
+import HeaderSection from '@/components/ui/header-section';
 
 import MarqueeCard from './testimony/marquee-card';
 

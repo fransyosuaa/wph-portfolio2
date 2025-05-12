@@ -51,7 +51,7 @@ const CareerHistory = () => {
                   ref={isLast ? lastDotRef : null}
                   className='bg-primary-100 aspect-square h-5 rounded-full p-1.25 transition-all duration-300 ease-in-out group-hover:shadow-[0_0_12px_4px_rgba(192,132,252,0.5)] md:h-6 md:p-1.5'
                 >
-                  <div className='bg-gradient-purple-pink aspect-square h-2.5 rounded-full md:h-3'></div>
+                  <div className='bg-gradient-purple-pink aspect-square h-2.5 rounded-full md:h-3' />
                 </div>
               </div>
               <div className='transform transition-transform duration-300 ease-in-out group-hover:scale-[1.02]'>

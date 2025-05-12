@@ -2,23 +2,23 @@ import React from 'react';
 
 import HeaderSection from '@/components/ui/header-section';
 
-import CareerHistory from './careerJourney/career-history';
+import ComparisonCard from './comparison/comparison-card';
 
-const CareerJourneyContainer = () => {
+const ComparisonContainer = () => {
   return (
     <section
       className='custom-container flex flex-col'
       style={{ paddingBlock: 'clamp(2.5rem, 6.62vw, 5rem)' }}
     >
       <HeaderSection
-        title='Career Journey'
-        description='A visual timeline of key milestones and experiences from over the years.'
+        title='Why I Stand Out'
+        description='A showcase of my unique approach and skill set compared to conventional front-end developers'
       />
       <div className='mt-8 md:mt-12'>
-        <CareerHistory />
+        <ComparisonCard />
       </div>
     </section>
   );
 };
 
-export default CareerJourneyContainer;
+export default ComparisonContainer;

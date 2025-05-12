@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CircleInfo from '@/components/ui/circleInfo';
+import CircleInfo from '@/components/ui/circle-info';
 
 import { briefingData } from '@/constants/briefing-data';
 

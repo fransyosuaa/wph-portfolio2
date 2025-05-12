@@ -27,7 +27,7 @@ const CareerCard = (props: CareerCardProps) => {
             {companyName}
           </span>
         </div>
-        <div className='hidden h-1 w-1 rounded-full bg-neutral-100 md:block'></div>
+        <div className='hidden h-1 w-1 rounded-full bg-neutral-100 md:block' />
         <div className='flex-start gap-1.5'>
           <Image
             src='/assets/icons/container/careerJourney/dateIcon.png'
