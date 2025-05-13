@@ -1,9 +1,9 @@
 import { StaticImageData } from 'next/image';
 
-import rafael1 from '../../public/assets/images/container/testimony/rafelStruick.png';
-import rafael2 from '../../public/assets/images/container/testimony/rafelStruick2.png';
-import rafael3 from '../../public/assets/images/container/testimony/rafelStruick3.png';
-import rafael4 from '../../public/assets/images/container/testimony/rafelStruick4.png';
+import rafael1 from '../../public/assets/images/container/testimony/rafel-struick.png';
+import rafael2 from '../../public/assets/images/container/testimony/rafel-struick2.png';
+import rafael3 from '../../public/assets/images/container/testimony/rafel-struick3.png';
+import rafael4 from '../../public/assets/images/container/testimony/rafel-struick4.png';
 
 type TestimonyProps = {
   src: StaticImageData;

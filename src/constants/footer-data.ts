@@ -1,8 +1,8 @@
 import { StaticImageData } from 'next/image';
 
-import DribbleIcon from '../../public/assets/icons/footer/dribbleIcon.png';
-import InstaIcon from '../../public/assets/icons/footer/instagramIcon.png';
-import LinkedInIcon from '../../public/assets/icons/footer/linkedInIcon.png';
+import DribbleIcon from '../../public/assets/icons/footer/dribble-icon.png';
+import InstaIcon from '../../public/assets/icons/footer/instagram-icon.png';
+import LinkedInIcon from '../../public/assets/icons/footer/linkedin-icon.png';
 
 type FooterData = {
   src: StaticImageData;
@@ -12,14 +12,14 @@ type FooterData = {
 export const footerData: FooterData[] = [
   {
     src: DribbleIcon,
-    alt: 'dribble-icon',
+    alt: 'dribble icon',
   },
   {
     src: InstaIcon,
-    alt: 'instagram-icon',
+    alt: 'instagram icon',
   },
   {
     src: LinkedInIcon,
-    alt: 'linkedin-icon',
+    alt: 'linkedin icon',
   },
 ];

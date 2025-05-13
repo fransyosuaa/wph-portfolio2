@@ -3,7 +3,6 @@
 import { Menu } from 'lucide-react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 
 import { Button } from '@/components/ui/button';
@@ -40,26 +39,28 @@ const Navbar = () => {
         className='flex-between custom-container'
         style={{ height: 'clamp(4rem, 6.95vw, 5.25rem)' }}
       >
-        <Image
-          src='/assets/images/logo.png'
-          alt='logo'
-          width={40}
-          height={40}
-          style={{
-            height: 'clamp(1.75rem, 3.31vw, 2.5rem)',
-            width: 'clamp(1.75rem, 3.31vw, 2.5rem)',
-          }}
-        />
+        <a href='#home'>
+          <Image
+            src='/assets/images/logo.png'
+            alt='logo'
+            width={40}
+            height={40}
+            style={{
+              height: 'clamp(1.75rem, 3.31vw, 2.5rem)',
+              width: 'clamp(1.75rem, 3.31vw, 2.5rem)',
+            }}
+          />
+        </a>
         <nav className='hidden lg:block'>
           <ul className='flex gap-6'>
             {navigationData.map((item) => (
               <li key={item.label} className='px-2'>
-                <Link
+                <a
                   href={item.href}
                   className='hover:bg-gradient-purple-pink text-md-regular bg-neutral-100 bg-clip-text text-transparent'
                 >
                   {item.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -70,8 +71,8 @@ const Navbar = () => {
         >
           <a href='#'>
             <Image
-              src='/assets/icons/header/emailIcon.png'
-              alt='email-icon'
+              src='/assets/icons/header/email-icon.png'
+              alt='email icon'
               width={18}
               height={15}
             />
@@ -84,8 +85,8 @@ const Navbar = () => {
             className='flex-center bg-gradient-purple-pink h-10 w-10 rounded-full px-2.5 hover:shadow-[0_0_17px_rgba(135,70,235,0.32)]'
           >
             <Image
-              src='/assets/icons/header/emailIcon.png'
-              alt='email-icon'
+              src='/assets/icons/header/email-icon.png'
+              alt='email icon'
               width={18}
               height={18}
             />
@@ -98,12 +99,16 @@ const Navbar = () => {
 
               <SheetContent>
                 <SheetHeader>
-                  <Image
-                    src='/assets/images/logo.png'
-                    alt='logo'
-                    width={28}
-                    height={28}
-                  />
+                  <SheetClose asChild>
+                    <a href='#home'>
+                      <Image
+                        src='/assets/images/logo.png'
+                        alt='logo'
+                        width={28}
+                        height={28}
+                      />
+                    </a>
+                  </SheetClose>
                   <SheetTitle className='hidden'>Menu</SheetTitle>
                 </SheetHeader>
                 <nav className='mt-5'>
@@ -111,12 +116,12 @@ const Navbar = () => {
                     {navigationData.map((item) => (
                       <li key={item.label}>
                         <SheetClose asChild>
-                          <Link
+                          <a
                             href={item.href}
                             className='hover:bg-gradient-purple-pink text-md-regular bg-neutral-100 bg-clip-text text-transparent'
                           >
                             {item.label}
-                          </Link>
+                          </a>
                         </SheetClose>
                       </li>
                     ))}
@@ -129,8 +134,8 @@ const Navbar = () => {
                   <SheetClose asChild>
                     <a href='#'>
                       <Image
-                        src='/assets/icons/header/emailIcon.png'
-                        alt='email-icon'
+                        src='/assets/icons/header/email-icon.png'
+                        alt='email icon'
                         width={18}
                         height={15}
                       />

@@ -5,94 +5,90 @@ import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   return (
-    <section className='relative overflow-hidden'>
+    <section
+      className='relative overflow-hidden max-md:pb-10 md:h-224.5'
+      id='home'
+    >
       <Image
-        src='/assets/images/hero/backgroundPattern.png'
-        alt='background-pattern'
+        src='/assets/images/hero/background-pattern.png'
+        alt='background pattern'
         width={1432}
         height={765}
         className='absolute top-0 right-0 z-[-1] bg-repeat-y'
       />
       <Image
-        src='/assets/images/hero/ellipseLeftUpper.png'
-        alt='ellipse-purple-left-upper'
+        src='/assets/images/hero/left-upper-purple-ellipse.png'
+        alt='left upper purple ellipse'
         width={0}
         height={0}
         className='absolute top-0 right-1/2 z-[-1] h-[201px] w-[461px] translate-x-[-51%] transform max-md:hidden'
       />
       <Image
-        src='/assets/images/hero/ellipseBackgroundRight.png'
-        alt='ellipse-purple-right'
+        src='/assets/images/hero/right-purple-ellipse.png'
+        alt='right purple ellipse'
         width={0}
         height={0}
         className='absolute top-0 right-0 z-[-1] h-[1624px] w-[1190px]'
       />
       <Image
-        src='/assets/images/waves.png'
-        alt='waves'
-        width={1440}
-        height={381}
-        className='absolute top-110 left-0 z-[-1] w-full bg-repeat-y md:top-145'
-      />
-      <Image
-        src='/assets/images/hero/ellipseDot.png'
-        alt='ellipse-dot'
+        src='/assets/images/hero/dot-ellipse.png'
+        alt='dot ellipse'
         width={7.25}
         height={7.25}
         className='absolute top-170 right-85 z-[-1]'
       />
       <Image
-        src='/assets/images/hero/ellipseDot.png'
-        alt='ellipse-dot'
+        src='/assets/images/hero/dot-ellipse.png'
+        alt='dot ellipse'
         width={7.25}
         height={7.25}
         className='absolute top-140 right-35 z-[-1]'
       />
       <Image
-        src='/assets/images/hero/ellipseDot.png'
-        alt='ellipse-dot'
+        src='/assets/images/hero/dot-ellipse.png'
+        alt='dot ellipse'
         width={7.25}
         height={7.25}
         className='absolute top-95 right-30 z-[-1]'
       />
       <Image
-        src='/assets/images/hero/ellipseDot.png'
-        alt='ellipse-dot'
+        src='/assets/images/hero/dot-ellipse.png'
+        alt='dot ellipse'
         width={7.25}
         height={7.25}
         className='absolute top-30 right-120 z-[-1]'
       />
       <Image
-        src='/assets/images/hero/ellipseDot.png'
-        alt='ellipse-dot'
+        src='/assets/images/hero/dot-ellipse.png'
+        alt='dot ellipse'
         width={7.25}
         height={7.25}
         className='absolute top-190 right-348 z-[-1]'
       />
       <Image
-        src='/assets/images/hero/ellipseDot.png'
-        alt='ellipse-dot'
+        src='/assets/images/hero/dot-ellipse.png'
+        alt='dot ellipse'
         width={7.25}
         height={7.25}
         className='absolute top-30 right-350 z-[-1]'
       />
       <Image
-        src='/assets/images/hero/ellipseDot.png'
-        alt='ellipse-dot'
+        src='/assets/images/hero/dot-ellipse.png'
+        alt='dot ellipse'
         width={7.25}
         height={7.25}
         className='absolute top-50 right-75 z-[-1]'
       />
       <Image
-        src='/assets/images/hero/ellipseDot.png'
-        alt='ellipse-dot'
+        src='/assets/images/hero/dot-ellipse.png'
+        alt='dot ellipse'
         width={7.25}
         height={7.25}
         className='absolute top-85 right-320 z-[-1]'
       />
       <Image
-        src='/assets/images/hero/ellipseDot.png'
-        alt='ellipse-dot'
+        src='/assets/images/hero/dot-ellipse.png'
+        alt='dot ellipse'
         width={7.25}
         height={7.25}
         className='absolute top-150 right-295 z-[-1]'
@@ -115,7 +111,7 @@ const Hero = () => {
         {/* Title */}
         <h1 className='display-xl-bold md:display-3xl-extrabold max-w-239 text-neutral-100'>
           I Am{' '}
-          <span className='bg-[url("/assets/images/hero/borderTitle.png")] bg-[length:100%_100%] bg-no-repeat px-4 py-1'>
+          <span className='bg-[url("/assets/images/hero/border-title.png")] bg-[length:100%_100%] bg-no-repeat px-4 py-1'>
             <span className='bg-gradient-purple-pink bg-clip-text text-transparent'>
               Not Overreact
             </span>
@@ -133,22 +129,8 @@ const Hero = () => {
           projects that bring satisfaction to users and stakeholders alike.
         </p>
         <Button>View Portfolio</Button>
-        <div className='bg-gradient-purple-pink flex-center relative mt-10 w-full rounded-4xl md:mt-63.25'>
-          <Image
-            src='/assets/images/hero/photo.png'
-            alt='photo'
-            width={818}
-            height={459}
-          />
-          <Image
-            src='/assets/icons/hero/playIcon.png'
-            alt='play-icon'
-            width={70}
-            height={70}
-            className='absolute top-1/2 left-1/2 translate-x-[-50%] transform cursor-pointer'
-          />
-        </div>
       </div>
+      <div className='absolute inset-x-0 bottom-0 z-[-1] h-[10%] bg-gradient-to-t from-neutral-600 to-transparent' />
     </section>
   );
 };

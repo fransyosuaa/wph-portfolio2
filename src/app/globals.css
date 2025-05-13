@@ -214,6 +214,10 @@
 }
 /* shadcn end */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply bg-neutral-600 text-sm font-normal text-neutral-100;
 

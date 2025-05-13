@@ -9,8 +9,8 @@ const TestimonyContainer = () => {
   return (
     <section className='relative overflow-hidden'>
       <Image
-        src='/assets/images/container/testimony/ellipseBackground.png'
-        alt='ellipse-purple'
+        src='/assets/images/container/testimony/ellipse-background.png'
+        alt='ellipse background'
         width={518}
         height={517}
         className='absolute -top-30 right-0 z-[-1]'

@@ -1,9 +1,9 @@
-type BriefingContainerData = {
+type AboutMeContainerData = {
   title: string;
   description: string;
 };
 
-export const briefingData: BriefingContainerData[] = [
+export const aboutMeData: AboutMeContainerData[] = [
   {
     title: '14+',
     description: 'Years Experience',

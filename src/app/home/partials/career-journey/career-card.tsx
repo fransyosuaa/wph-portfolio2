@@ -18,8 +18,8 @@ const CareerCard = (props: CareerCardProps) => {
       <div className='flex flex-col gap-3 md:flex-row md:items-center'>
         <div className='flex-start gap-1.5'>
           <Image
-            src='/assets/icons/container/careerJourney/companyIcon.png'
-            alt='company-icon'
+            src='/assets/icons/container/career-journey/company-icon.png'
+            alt='company icon'
             width={24}
             height={24}
           />
@@ -30,8 +30,8 @@ const CareerCard = (props: CareerCardProps) => {
         <div className='hidden h-1 w-1 rounded-full bg-neutral-100 md:block' />
         <div className='flex-start gap-1.5'>
           <Image
-            src='/assets/icons/container/careerJourney/dateIcon.png'
-            alt='date-icon'
+            src='/assets/icons/container/career-journey/date-icon.png'
+            alt='date icon'
             width={24}
             height={24}
           />
