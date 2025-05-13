@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 
+import CustomLink from '@/components/ui/custom-link';
+
 import { footerData } from '@/constants/footer-data';
 
 import IconWrapper from './footer/icon-wrapper';
@@ -28,7 +30,9 @@ const Footer = () => {
         </div>
         <div className='flex items-center gap-4'>
           {footerData.map((dt, idx) => (
-            <IconWrapper key={idx} src={dt.src} alt={dt.alt} />
+            <CustomLink key={idx} href={dt.url} openNewTab>
+              <IconWrapper src={dt.src} alt={dt.alt} />
+            </CustomLink>
           ))}
         </div>
       </div>
