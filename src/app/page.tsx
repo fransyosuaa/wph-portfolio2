@@ -3,6 +3,7 @@
 import AboutMeContainer from './home/partials/about-me-container';
 import CareerJourneyContainer from './home/partials/career-journey-container';
 import ComparisonContainer from './home/partials/comparison-container';
+import FAQContainer from './home/partials/faq-container';
 // import ContactMeContainer from './home/partials/contact-me-container';
 import Footer from './home/partials/footer';
 import Hero from './home/partials/hero';
@@ -19,6 +20,7 @@ const Home = () => {
       <AboutMeContainer />
       <CareerJourneyContainer />
       <ComparisonContainer />
+      <FAQContainer />
       <TestimonyContainer />
       {/*<ContactMeContainer />*/}
       <Footer />
