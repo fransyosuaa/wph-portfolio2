@@ -22,7 +22,7 @@ export const FAQAccordionItem = (props: FAQAccordionItemProps) => {
           <AccordionTrigger className='text-md-semibold md:text-xl-semibold'>
             {question}
           </AccordionTrigger>
-          <AccordionContent className='text-sm-regular md:text-md-regular text-neutral-200'>
+          <AccordionContent className='text-sm-regular md:text-md-regular mt-3 text-neutral-200 md:mt-4'>
             {answer}
           </AccordionContent>
         </div>

@@ -102,14 +102,14 @@ const Hero = () => {
         {/* Frans' Portfolio */}
         <div className='bg-gradient-purple-pink rounded-full p-[1px] shadow-[0_0_17px_rgba(135,70,235,0.55)]'>
           <div
-            className='text-xs-medium md:text-md-medium rounded-full bg-neutral-500 py-2 text-neutral-100'
+            className='text-xs-medium md:text-md-medium rounded-full bg-neutral-500 py-2'
             style={{ paddingInline: 'clamp(1rem, 1.99vw, 1.5rem)' }}
           >
             👨 Frans’ Portfolio
           </div>
         </div>
         {/* Title */}
-        <h1 className='display-xl-bold md:display-3xl-extrabold max-w-239 text-neutral-100'>
+        <h1 className='display-xl-bold md:display-3xl-extrabold max-w-239'>
           I Am{' '}
           <span className='bg-[url("/assets/images/hero/border-title.png")] bg-[length:100%_100%] bg-no-repeat px-4 py-1'>
             <span className='bg-gradient-purple-pink bg-clip-text text-transparent'>

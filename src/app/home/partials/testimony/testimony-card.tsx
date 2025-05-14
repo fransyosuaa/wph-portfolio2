@@ -18,9 +18,7 @@ const TestimonyCard = (props: TestimonyCardProps) => {
         <div className='flex gap-2 md:gap-4'>
           <Image src={src} alt={alt} />
           <div className='flex flex-col gap-0.75'>
-            <h4 className='text-sm-bold md:text-md-bold text-neutral-100'>
-              {name}
-            </h4>
+            <h4 className='text-sm-bold md:text-md-bold'>{name}</h4>
             <p className='text-sm-regular md:text-md-regular text-neutral-200'>
               {position}
             </p>

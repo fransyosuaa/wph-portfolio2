@@ -8,6 +8,7 @@ import FAQContainer from './home/partials/faq-container';
 import Footer from './home/partials/footer';
 import Hero from './home/partials/hero';
 import Navbar from './home/partials/navbar';
+import ProjectListContainer from './home/partials/project-list-container';
 import TestimonyContainer from './home/partials/testimony-container';
 import Wave from './home/partials/wave';
 
@@ -15,13 +16,14 @@ const Home = () => {
   return (
     <div className='relative'>
       <Navbar />
-      <Hero />
+      {/* <Hero />
       <Wave />
       <AboutMeContainer />
-      <CareerJourneyContainer />
+      <CareerJourneyContainer /> */}
       <ComparisonContainer />
+      <ProjectListContainer />
       <FAQContainer />
-      <TestimonyContainer />
+      {/* <TestimonyContainer /> */}
       {/*<ContactMeContainer />*/}
       <Footer />
     </div>

@@ -65,10 +65,7 @@ const Navbar = () => {
             ))}
           </ul>
         </nav>
-        <Button
-          asChild
-          className='text-md-medium hidden text-neutral-100 lg:flex'
-        >
+        <Button asChild className='text-md-medium hidden lg:flex'>
           <a href='#'>
             <Image
               src='/assets/icons/header/email-icon.png'
@@ -127,10 +124,7 @@ const Navbar = () => {
                     ))}
                   </ul>
                 </nav>
-                <Button
-                  asChild
-                  className='text-md-medium mt-6 text-neutral-100'
-                >
+                <Button asChild className='text-md-medium mt-6'>
                   <SheetClose asChild>
                     <a href='#'>
                       <Image

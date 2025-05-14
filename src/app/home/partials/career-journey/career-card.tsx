@@ -12,9 +12,7 @@ const CareerCard = (props: CareerCardProps) => {
   const { title, companyName, duration, jobDesc } = props;
   return (
     <div className='flex flex-col gap-3 rounded-4xl bg-neutral-500 p-3 md:gap-5 md:p-6'>
-      <h3 className='text-md-bold md:display-xs-bold text-neutral-100'>
-        {title}
-      </h3>
+      <h3 className='text-md-bold md:display-xs-bold'>{title}</h3>
       <div className='flex flex-col gap-3 md:flex-row md:items-center'>
         <div className='flex-start gap-1.5'>
           <Image
@@ -23,7 +21,7 @@ const CareerCard = (props: CareerCardProps) => {
             width={24}
             height={24}
           />
-          <span className='md:text-md-regular text-sm-regular text-neutral-100'>
+          <span className='md:text-md-regular text-sm-regular'>
             {companyName}
           </span>
         </div>
@@ -35,9 +33,7 @@ const CareerCard = (props: CareerCardProps) => {
             width={24}
             height={24}
           />
-          <span className='md:text-md-regular text-sm-regular text-neutral-100'>
-            {duration}
-          </span>
+          <span className='md:text-md-regular text-sm-regular'>{duration}</span>
         </div>
       </div>
       <ul className='text-sm-regular md:text-md-regular flex flex-col gap-3 text-neutral-200 md:gap-5'>

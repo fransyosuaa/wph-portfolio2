@@ -16,7 +16,7 @@ const bodyText: string[] = [
 
 const ComparisonCard = () => {
   return (
-    <div className='text-sm-semibold rounded-3xl bg-neutral-500 px-2.5 py-6 text-neutral-100 md:px-6'>
+    <div className='text-sm-semibold rounded-3xl bg-neutral-500 px-2.5 py-6 md:px-6'>
       {/* Header */}
       <div className='bg-gradient-purple-pink md:text-md-bold grid h-12 grid-cols-[4fr_1fr_1fr] items-center rounded-full px-2.5 text-center md:h-14 md:grid-cols-3 md:rounded-4xl md:px-0'>
         {headerText.map((txt, index) => (

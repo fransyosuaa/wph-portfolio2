@@ -5,7 +5,7 @@ import CircleInfo from '@/components/ui/circle-info';
 
 import { aboutMeData } from '@/constants/about-me-data';
 
-const BriefingContainer = () => {
+const AboutMeContainter = () => {
   return (
     <section
       className='custom-container -mt-10 flex flex-col'
@@ -31,7 +31,7 @@ const BriefingContainer = () => {
         />
       </div>
       <div className='flex flex-wrap items-start gap-3 md:gap-0'>
-        <h2 className='display-sm-extrabold md:display-2xl-extrabold flex-[2.7] basis-80 text-neutral-100'>
+        <h2 className='display-sm-extrabold md:display-2xl-extrabold flex-[2.7] basis-80'>
           Who am I?
         </h2>
         <p className='text-sm-regular md:text-md-regular flex-[7.3] basis-80 text-neutral-200'>
@@ -49,27 +49,25 @@ const BriefingContainer = () => {
           environment.
         </p>
       </div>
-      <div>
-        <ul className='flex-center flex-wrap gap-3 md:gap-5'>
-          {aboutMeData.map((item, index) => {
-            const type = (index + 1) % 2 === 0 ? 'default' : 'outline';
-            return (
-              <li
-                key={index}
-                className='transform transition-transform duration-300 ease-in-out hover:scale-[1.07]'
-              >
-                <CircleInfo
-                  title={item.title}
-                  description={item.description}
-                  type={type}
-                />
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+      <ul className='flex-between flex-wrap gap-3 md:gap-5'>
+        {aboutMeData.map((item, index) => {
+          const type = (index + 1) % 2 === 0 ? 'default' : 'outline';
+          return (
+            <li
+              key={index}
+              className='transform transition-transform duration-300 ease-in-out hover:scale-[1.07]'
+            >
+              <CircleInfo
+                title={item.title}
+                description={item.description}
+                type={type}
+              />
+            </li>
+          );
+        })}
+      </ul>
     </section>
   );
 };
 
-export default BriefingContainer;
+export default AboutMeContainter;
