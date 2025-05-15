@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-import Section from '@/components/layouts/section';
+import HeaderSection from '@/components/ui/header-section';
 
 import MarqueeCard from './testimony/marquee-card';
 
@@ -15,13 +15,28 @@ const TestimonyContainer = () => {
         height={517}
         className='absolute -top-30 right-0 z-[-1]'
       />
-      <Section
+      <div
+        className='custom-container'
+        style={{
+          paddingTop: 'clamp(2.5rem, 6.62vw, 5rem)',
+        }}
         id='testimony'
-        title='What People Say About Me'
-        description='Hear from clients and colleagues about their experiences working with me.'
+      >
+        <HeaderSection
+          title='What People Say About Me'
+          description='Hear from clients and colleagues about their experiences working with me.'
+        />
+      </div>
+
+      {/* Marquee not inside of custom-container */}
+      <div
+        style={{
+          marginTop: 'clamp(2rem, 3.97vw, 3rem)',
+          paddingBottom: 'clamp(2.5rem, 6.62vw, 5rem)',
+        }}
       >
         <MarqueeCard />
-      </Section>
+      </div>
     </section>
   );
 };
