@@ -10,13 +10,6 @@ const Hero = () => {
       id='home'
     >
       <Image
-        src='/assets/images/hero/background-pattern.png'
-        alt='background pattern'
-        width={1432}
-        height={765}
-        className='absolute top-0 right-0 z-[-1] bg-repeat-y'
-      />
-      <Image
         src='/assets/images/hero/left-upper-purple-ellipse.png'
         alt='left upper purple ellipse'
         width={0}
@@ -30,69 +23,8 @@ const Hero = () => {
         height={0}
         className='absolute top-0 right-0 z-[-1] h-[1624px] w-[1190px]'
       />
-      <Image
-        src='/assets/images/hero/dot-ellipse.png'
-        alt='dot ellipse'
-        width={7.25}
-        height={7.25}
-        className='absolute top-170 right-85 z-[-1]'
-      />
-      <Image
-        src='/assets/images/hero/dot-ellipse.png'
-        alt='dot ellipse'
-        width={7.25}
-        height={7.25}
-        className='absolute top-140 right-35 z-[-1]'
-      />
-      <Image
-        src='/assets/images/hero/dot-ellipse.png'
-        alt='dot ellipse'
-        width={7.25}
-        height={7.25}
-        className='absolute top-95 right-30 z-[-1]'
-      />
-      <Image
-        src='/assets/images/hero/dot-ellipse.png'
-        alt='dot ellipse'
-        width={7.25}
-        height={7.25}
-        className='absolute top-30 right-120 z-[-1]'
-      />
-      <Image
-        src='/assets/images/hero/dot-ellipse.png'
-        alt='dot ellipse'
-        width={7.25}
-        height={7.25}
-        className='absolute top-190 right-348 z-[-1]'
-      />
-      <Image
-        src='/assets/images/hero/dot-ellipse.png'
-        alt='dot ellipse'
-        width={7.25}
-        height={7.25}
-        className='absolute top-30 right-350 z-[-1]'
-      />
-      <Image
-        src='/assets/images/hero/dot-ellipse.png'
-        alt='dot ellipse'
-        width={7.25}
-        height={7.25}
-        className='absolute top-50 right-75 z-[-1]'
-      />
-      <Image
-        src='/assets/images/hero/dot-ellipse.png'
-        alt='dot ellipse'
-        width={7.25}
-        height={7.25}
-        className='absolute top-85 right-320 z-[-1]'
-      />
-      <Image
-        src='/assets/images/hero/dot-ellipse.png'
-        alt='dot ellipse'
-        width={7.25}
-        height={7.25}
-        className='absolute top-150 right-295 z-[-1]'
-      />
+      <div className="pointer-events-none absolute inset-0 z-[-1] bg-[url('/assets/images/hero/hero-circle-decoration.png')] bg-repeat opacity-70" />
+      <div className="pointer-events-none absolute inset-0 z-[-1] bg-[linear-gradient(to_top_left,_transparent,_#262626),url('/assets/images/hero/hero-grid-decoration.png')] bg-repeat opacity-70" />
       <div
         className='custom-container flex-center mt-26 flex-col text-center md:mt-55.5'
         style={{

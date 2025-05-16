@@ -66,7 +66,7 @@ const Navbar = () => {
           </ul>
         </nav>
         <Button asChild className='text-md-medium hidden lg:flex'>
-          <a href='#'>
+          <a href='#contact-me'>
             <Image
               src='/assets/icons/header/email-icon.png'
               alt='email icon'
@@ -78,7 +78,7 @@ const Navbar = () => {
         </Button>
         <div className='flex gap-4 lg:hidden'>
           <a
-            href='#'
+            href='#contact-me'
             className='flex-center bg-gradient-purple-pink h-10 w-10 rounded-full px-2.5 hover:shadow-[0_0_17px_rgba(135,70,235,0.32)]'
           >
             <Image
@@ -126,7 +126,7 @@ const Navbar = () => {
                 </nav>
                 <Button asChild className='text-md-medium mt-6'>
                   <SheetClose asChild>
-                    <a href='#'>
+                    <a href='#contact-me'>
                       <Image
                         src='/assets/icons/header/email-icon.png'
                         alt='email icon'
