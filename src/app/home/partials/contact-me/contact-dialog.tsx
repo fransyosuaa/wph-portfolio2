@@ -34,11 +34,11 @@ const ContactDialog = ({ isOpen, onOpenChange }: ContactDialogProps) => {
             Thank you for reaching out. I’ll get back to you as soon as possible
           </DialogDescription>
         </DialogHeader>
-        <Button asChild>
+        <DialogClose asChild>
           <a href='#home'>
-            <DialogClose>Back to Home</DialogClose>
+            <Button>Back to Home</Button>
           </a>
-        </Button>
+        </DialogClose>
       </DialogContent>
     </Dialog>
   );
