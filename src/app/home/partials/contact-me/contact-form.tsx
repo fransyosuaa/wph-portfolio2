@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import { zodResolver } from '@hookform/resolvers/zod';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
@@ -19,6 +20,9 @@ type ContactFormProps = {
 
 const ContactForm = (props: ContactFormProps) => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [sendEmailStatus, setSendEmailStatus] = useState<'success' | 'error'>(
+    'success'
+  );
 
   const {
     register,
@@ -30,12 +34,27 @@ const ContactForm = (props: ContactFormProps) => {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    console.log('Form submitted:', data);
-    // simulate API call (replace with your actual logic)
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          name: data.name,
+          email: data.email,
+          message: data.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
 
-    reset();
-    setIsDialogOpen(true);
+      setSendEmailStatus('success');
+      setIsDialogOpen(true);
+    } catch (error) {
+      setSendEmailStatus('error');
+      console.error('Error sending email:', error);
+      setIsDialogOpen(true);
+    } finally {
+      reset();
+    }
   };
 
   return (
@@ -87,7 +106,11 @@ const ContactForm = (props: ContactFormProps) => {
           </Button>
         </form>
       </div>
-      <ContactDialog isOpen={isDialogOpen} onOpenChange={setIsDialogOpen} />
+      <ContactDialog
+        isOpen={isDialogOpen}
+        onOpenChange={setIsDialogOpen}
+        emailStatus={sendEmailStatus}
+      />
     </>
   );
 };

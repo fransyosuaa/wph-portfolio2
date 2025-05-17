@@ -24,7 +24,7 @@ const Hero = () => {
         className='absolute top-0 right-0 z-[-1] h-[1624px] w-[1190px]'
       />
       <div className="pointer-events-none absolute inset-0 z-[-1] bg-[url('/assets/images/hero/hero-circle-decoration.png')] bg-repeat opacity-70" />
-      <div className="pointer-events-none absolute inset-0 z-[-1] bg-[linear-gradient(to_top_left,_transparent,_#262626),url('/assets/images/hero/hero-grid-decoration.png')] bg-repeat opacity-70" />
+      <div className="pointer-events-none absolute inset-0 z-[-1] bg-[linear-gradient(to_top_left,_transparent,_#262626),url('/assets/images/hero/hero-grid-decoration.png')] bg-repeat opacity-35" />
       <div
         className='custom-container flex-center mt-26 flex-col text-center md:mt-55.5'
         style={{
