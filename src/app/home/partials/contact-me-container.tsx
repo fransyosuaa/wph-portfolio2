@@ -1,20 +1,10 @@
-import Image from 'next/image';
 import React from 'react';
 
 import ContactForm from './contact-me/contact-form';
 
 const ContactMeContainer = () => {
   return (
-    <section className='relative'>
-      <Image
-        src='/assets/images/container/contact-me/ellipse.svg'
-        alt='ellipse background'
-        width={0}
-        height={0}
-        className='absolute right-0 -bottom-[0%] z-[-1] h-auto w-[1738px] -translate-x-[0] translate-y-[0%] transform border-2 border-amber-200'
-      />
-      {/* <div className="pointer-events-none absolute inset-0 z-[-1] bg-[url('/assets/images/hero/hero-circle-decoration.png')] bg-repeat opacity-30" />
-      <div className="pointer-events-none absolute inset-0 z-[-1] bg-[linear-gradient(to_top_left,_transparent,_#262626),url('/assets/images/hero/hero-grid-decoration.png')] bg-repeat opacity-30" /> */}
+    <section className='before-bg-contact relative'>
       <div
         className='custom-container flex-between flex-wrap gap-6 py-10 md:pt-20 md:pb-25'
         id='contact-me'

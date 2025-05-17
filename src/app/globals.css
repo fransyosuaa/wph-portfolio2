@@ -244,6 +244,16 @@ body {
     @apply flex items-center justify-start;
   }
 
+  .before-bg-contact-dialog::before {
+    content: '';
+    @apply absolute -top-[7%] left-[12%] z-[-1] h-[507px] w-[360px] bg-[url('/assets/images/container/contact-me/purple-dialog.svg')] bg-contain bg-no-repeat;
+  }
+
+  .before-bg-contact::before {
+    content: '';
+    @apply absolute right-0 -bottom-[15%] z-[-1] h-[1277px] w-[1418px] bg-[url('/assets/images/container/contact-me/contact-section.svg')] bg-contain bg-no-repeat;
+  }
+
   @media (min-width: 768px) {
     .gap-var {
       --gap: 1.25rem;
