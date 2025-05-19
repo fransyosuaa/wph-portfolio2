@@ -18,7 +18,7 @@ export const navigationData: Navigation[] = [
   },
   {
     label: 'Skills',
-    href: '#skills',
+    href: '#skill',
   },
   {
     label: 'Projects',

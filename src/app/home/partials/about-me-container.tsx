@@ -17,7 +17,7 @@ const AboutMeContainter = () => {
     >
       <div className='bg-gradient-purple-pink flex-center relative w-full rounded-4xl'>
         <Image
-          src='/assets/images/container/about-me/photo.png'
+          src='/assets/images/container/about-me/frans.png'
           alt='photo'
           width={818}
           height={459}
