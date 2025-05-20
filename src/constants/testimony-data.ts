@@ -1,9 +1,9 @@
 import { StaticImageData } from 'next/image';
 
-import rafael1 from '../../public/assets/images/container/testimony/rafel-struick.png';
-import rafael2 from '../../public/assets/images/container/testimony/rafel-struick2.png';
-import rafael3 from '../../public/assets/images/container/testimony/rafel-struick3.png';
-import rafael4 from '../../public/assets/images/container/testimony/rafel-struick4.png';
+import DediW from '../../public/assets/images/container/testimony/dedi-wibisono.png';
+import FeibyV from '../../public/assets/images/container/testimony/feiby-veronika.png';
+import HafizP from '../../public/assets/images/container/testimony/hafiz-putra.png';
+import HelenaN from '../../public/assets/images/container/testimony/helena-natanael.png';
 
 type TestimonyProps = {
   src: StaticImageData;
@@ -15,35 +15,35 @@ type TestimonyProps = {
 
 export const testimonyData: TestimonyProps[] = [
   {
-    src: rafael1,
-    alt: 'rafael1',
-    name: 'Rafael',
-    position: 'CEO',
+    src: DediW,
+    alt: 'dedi wibisono',
+    name: 'Dedi Wibisono',
+    position: 'FE @detik.com',
     testimony:
-      '“Working with Mark has been a pleasure. His ability to integrate both front-end and back-end elements seamlessly has been a key asset to our project’s success”',
+      '“Frans is a good friend to work with even though he is a different team. Nice to have a discussion with him. Likes to learn new things and be ready to face challanges. Success in your next career ya”',
   },
   {
-    src: rafael2,
-    alt: 'rafael2',
-    name: 'Rafael',
-    position: 'CEO',
+    src: HelenaN,
+    alt: 'helena natanael',
+    name: 'Helena Natanael',
+    position: 'SE @tiket.com',
     testimony:
-      '“Working with Mark has been a pleasure. His ability to integrate both front-end and back-end elements seamlessly has been a key asset to our project’s success”',
+      '“Frans is a friendly person and eager to learn. We worked together in a Front-End project when his actual scope is Back-End. However he can learn fast and implement his knowledge in the project so it meets the expectation.”',
   },
   {
-    src: rafael3,
-    alt: 'rafael3',
-    name: 'Rafael',
-    position: 'CEO',
+    src: HafizP,
+    alt: 'hafiz putra',
+    name: 'Hafiz Putra',
+    position: 'SE @kitabisa',
     testimony:
-      '“Working with Mark has been a pleasure. His ability to integrate both front-end and back-end elements seamlessly has been a key asset to our project’s success”',
+      '“He is a good person and enjoyable to talk with. He likes to help people solving business problems with his engineering knowledge. He likes to venture out of his field to find joy in technical engineering.”',
   },
   {
-    src: rafael4,
-    alt: 'rafael4',
-    name: 'Rafael',
+    src: FeibyV,
+    alt: 'feiby veronika',
+    name: 'Feiby Veronika',
     position: 'CEO',
     testimony:
-      '“Working with Mark has been a pleasure. His ability to integrate both front-end and back-end elements seamlessly has been a key asset to our project’s success”',
+      '“Frans is a diligent and responsible employee. He has good teamwork and great leadership. He always arrived on time. He carried out his tasks on schedule. I was very happy to work with Frans.”',
   },
 ];
