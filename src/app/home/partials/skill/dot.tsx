@@ -2,22 +2,24 @@ import React from 'react';
 
 type DotProps = {
   dot: {
-    x: string;
-    y: string;
+    angle: number;
+    radius: number;
   };
 };
 const Dot = (props: DotProps) => {
   const {
-    dot: { x, y },
+    dot: { angle, radius },
   } = props;
+
+  const angleRad = (angle * Math.PI) / 180;
+  const x = radius * Math.cos(angleRad);
+  const y = radius * Math.sin(angleRad);
 
   return (
     <div
-      className='absolute size-2 rounded-full bg-neutral-400 md:size-4'
+      className='absolute top-1/2 left-1/2 size-2 rounded-full bg-neutral-400 md:size-4'
       style={{
-        left: x,
-        top: y,
-        transform: 'translate(-50%, -50%)',
+        transform: `translate(${x}px, ${y}px)`,
       }}
     />
   );
