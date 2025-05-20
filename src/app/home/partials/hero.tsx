@@ -60,7 +60,9 @@ const Hero = () => {
           and operational efficiency. Passionate about creating impactful
           projects that bring satisfaction to users and stakeholders alike.
         </p>
-        <Button>View Portfolio</Button>
+        <Button asChild>
+          <a href='#about'>View Portfolio</a>
+        </Button>
       </div>
       <div className='absolute inset-x-0 bottom-0 z-[-1] h-[10%] bg-gradient-to-t from-neutral-600 to-transparent' />
     </section>

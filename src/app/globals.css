@@ -244,6 +244,11 @@ body {
     @apply flex items-center justify-start;
   }
 
+  .before-bg-skill::before {
+    content: '';
+    @apply absolute -top-[80%] left-[0%] z-[-1] h-[1934px] w-[1096px] bg-[url('/assets/images/container/skill/ellipse-background.png')] bg-no-repeat;
+  }
+
   .before-bg-contact-dialog::before {
     content: '';
     @apply absolute -top-[7%] left-[12%] z-[-1] h-[507px] w-[360px] bg-[url('/assets/images/container/contact-me/purple-dialog.svg')] bg-contain bg-no-repeat;

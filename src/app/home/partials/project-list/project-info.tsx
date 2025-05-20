@@ -11,7 +11,9 @@ type ProjectInfoProps = {
 const ProjectInfo = (props: ProjectInfoProps) => {
   return (
     <div className='flex flex-col gap-2 md:gap-3'>
-      <h3 className='text-lg-bold md:text-xl-bold'>{props.name}</h3>
+      <h3 className='text-lg-bold md:text-xl-bold hover:bg-gradient-purple-pink bg-neutral-100 bg-clip-text text-transparent'>
+        {props.name}
+      </h3>
       <div className='flex gap-2'>
         {props.skills.map((item, idx) => (
           <Pill key={idx}>{item}</Pill>
