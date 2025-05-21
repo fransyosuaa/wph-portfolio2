@@ -19,10 +19,10 @@ export const FAQAccordionItem = (props: FAQAccordionItemProps) => {
     <AccordionItem value={`${index}`}>
       <div className='group-data-[state=open]:from-gradient-from group-data-[state=open]:to-gradient-to relative rounded-2xl p-[1px] transition-all group-data-[state=open]:bg-gradient-to-r'>
         <div className='rounded-2xl bg-neutral-500 px-4 py-4 md:px-6'>
-          <AccordionTrigger className='text-md-semibold md:text-xl-semibold hover:bg-gradient-purple-pink bg-neutral-100 bg-clip-text text-transparent'>
+          <AccordionTrigger className='text-md-semibold md:text-xl-semibold md:data-[state=open]:mt-2'>
             {question}
           </AccordionTrigger>
-          <AccordionContent className='text-sm-regular md:text-md-regular mt-3 text-neutral-200 md:mt-4'>
+          <AccordionContent className='text-sm-regular md:text-md-regular mt-3 text-neutral-200 md:mt-4 md:group-data-[state=open]:mb-2'>
             {answer}
           </AccordionContent>
         </div>

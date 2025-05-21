@@ -246,7 +246,12 @@ body {
 
   .before-bg-skill::before {
     content: '';
-    @apply absolute -top-[80%] left-[0%] z-[-1] h-[1934px] w-[1096px] bg-[url('/assets/images/container/skill/ellipse-background.png')] bg-no-repeat;
+    @apply absolute top-0 left-0 z-[-1] bg-contain bg-no-repeat;
+    width: 100vw;
+    height: auto;
+    aspect-ratio: 1096 / 1934;
+    transform: translate(0%, -40%);
+    background-image: url('/assets/images/container/skill/ellipse-background.png');
   }
 
   .before-bg-contact-dialog::before {
@@ -271,5 +276,5 @@ img {
   -webkit-user-drag: none;
   user-select: none;
   -webkit-user-select: none;
-  touch-action: none;
+  touch-action: auto;
 }

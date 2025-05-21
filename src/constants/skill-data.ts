@@ -13,7 +13,7 @@ type SkillData = {
   src: StaticImageData;
   alt: string;
   angle: number;
-  radius: number;
+  radius: number; // in percent of container (like 40%)
 };
 
 export const skillData: SkillData[] = [
@@ -23,7 +23,7 @@ export const skillData: SkillData[] = [
     src: HTML5,
     alt: 'html',
     angle: 237,
-    radius: 245,
+    radius: 97,
   },
   {
     name: 'Redux',
@@ -31,7 +31,7 @@ export const skillData: SkillData[] = [
     src: Redux,
     alt: 'redux',
     angle: 330,
-    radius: 80,
+    radius: 47,
   },
   {
     name: 'Javascript',
@@ -39,7 +39,7 @@ export const skillData: SkillData[] = [
     src: Javascript,
     alt: 'javascript',
     angle: 185,
-    radius: 245,
+    radius: 97,
   },
   {
     name: 'React',
@@ -47,7 +47,7 @@ export const skillData: SkillData[] = [
     src: React,
     alt: 'react',
     angle: 120,
-    radius: 208,
+    radius: 70,
   },
   {
     name: 'CSS',
@@ -55,7 +55,7 @@ export const skillData: SkillData[] = [
     src: CSS3,
     alt: 'css',
     angle: 320,
-    radius: 248,
+    radius: 97,
   },
   {
     name: 'Typescript',
@@ -63,34 +63,34 @@ export const skillData: SkillData[] = [
     src: Typescript,
     alt: 'typescript',
     angle: 45,
-    radius: 170,
+    radius: 70,
   },
 ];
 
 type DotData = {
   angle: number;
-  radius: number;
+  radius: number; // in percent of container (like 40%)
 };
 
 export const dotData: DotData[] = [
   {
     angle: 283,
-    radius: 262,
+    radius: 100,
   },
   {
     angle: 220,
-    radius: 201,
+    radius: 75,
   },
   {
     angle: 350,
-    radius: 186,
+    radius: 75,
   },
   {
     angle: 183,
-    radius: 140,
+    radius: 52,
   },
   {
     angle: 85,
-    radius: 250,
+    radius: 100,
   },
 ];
