@@ -3,7 +3,7 @@
 import { Menu } from 'lucide-react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import Image from 'next/image';
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -30,32 +30,9 @@ const Navbar = () => {
     ['blur(0px)', 'blur(3px)']
   );
 
-  const [showNav, setShowNav] = useState(true);
-  const prevScrollY = useRef(0);
-
-  useEffect(() => {
-    const unsubscribe = scrollY.on('change', (current) => {
-      const prev = prevScrollY.current;
-
-      if (current > prev && current > 50) {
-        // Scrolling down and passed threshold
-        setShowNav(false);
-      } else if (current < prev) {
-        // Scrolling up
-        setShowNav(true);
-      }
-
-      prevScrollY.current = current;
-    });
-
-    return () => unsubscribe();
-  }, [scrollY]);
-
   return (
     <motion.header
       style={{ background, backdropFilter }}
-      animate={{ y: showNav ? 0 : -100 }}
-      transition={{ type: 'tween', duration: 0.5 }}
       className='fixed top-0 z-50 w-full'
     >
       <div
