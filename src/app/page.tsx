@@ -21,7 +21,9 @@ const Home = () => {
       <Wave />
       <AboutMeContainer />
       <CareerJourneyContainer />
-      <SkillContainer />
+
+      {/* <SkillContainer />  */}
+
       <ComparisonContainer />
       <ProjectListContainer />
       <FAQContainer />
