@@ -42,7 +42,7 @@ export const testimonyData: TestimonyProps[] = [
     src: FeibyV,
     alt: 'feiby veronika',
     name: 'Feiby Veronika',
-    position: 'CEO',
+    position: 'SE @FinAccel',
     testimony:
       '“Frans is a diligent and responsible employee. He has good teamwork and great leadership. He always arrived on time. He carried out his tasks on schedule. I was very happy to work with Frans.”',
   },
