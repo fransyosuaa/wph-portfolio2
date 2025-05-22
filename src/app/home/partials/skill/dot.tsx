@@ -20,7 +20,7 @@ const Dot = (props: DotProps) => {
 
   return (
     <div
-      className='absolute top-1/2 left-1/2'
+      className='absolute top-1/2 left-1/2 z-[-1]'
       style={{ transform: 'translate(-50%, -50%)' }}
     >
       <div

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { cn } from '@/lib/utils';
+import { generateClamp } from '@/utils/clamp';
 
 import HeaderSection from '../ui/header-section';
 
@@ -19,8 +20,8 @@ const Section = (props: SectionProps) => {
     <section
       className={cn('custom-container flex flex-col', className)}
       style={{
-        paddingBlock: 'clamp(2.5rem, 6.62vw, 5rem)',
-        gap: 'clamp(2rem, 3.97vw, 3rem)',
+        paddingBlock: generateClamp(40, 80, 1208),
+        gap: generateClamp(32, 48, 1208),
       }}
       id={id}
     >

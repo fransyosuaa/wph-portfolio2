@@ -3,6 +3,8 @@ import React from 'react';
 
 import { Button } from '@/components/ui/button';
 
+import { generateClamp } from '@/utils/clamp';
+
 const Hero = () => {
   return (
     <section
@@ -28,14 +30,14 @@ const Hero = () => {
       <div
         className='custom-container flex-center mt-26 flex-col text-center md:mt-55.5'
         style={{
-          gap: 'clamp(1.25rem, 1.99vw, 1.5rem)',
+          gap: generateClamp(20, 24, 1208),
         }}
       >
         {/* Frans' Portfolio */}
         <div className='bg-gradient-purple-pink rounded-full p-[1px] shadow-[0_0_17px_rgba(135,70,235,0.55)]'>
           <div
             className='text-xs-medium md:text-md-medium rounded-full bg-neutral-500 py-2'
-            style={{ paddingInline: 'clamp(1rem, 1.99vw, 1.5rem)' }}
+            style={{ paddingInline: generateClamp(16, 24, 1208) }}
           >
             👨 Frans’ Portfolio
           </div>

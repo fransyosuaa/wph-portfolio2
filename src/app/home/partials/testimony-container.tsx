@@ -3,6 +3,8 @@ import React from 'react';
 
 import HeaderSection from '@/components/ui/header-section';
 
+import { generateClamp } from '@/utils/clamp';
+
 import MarqueeCard from './testimony/marquee-card';
 
 const TestimonyContainer = () => {
@@ -18,7 +20,7 @@ const TestimonyContainer = () => {
       <div
         className='custom-container'
         style={{
-          paddingTop: 'clamp(2.5rem, 6.62vw, 5rem)',
+          paddingTop: generateClamp(40, 80, 1208),
         }}
         id='testimony'
       >
@@ -31,8 +33,8 @@ const TestimonyContainer = () => {
       {/* Marquee not inside of custom-container */}
       <div
         style={{
-          marginTop: 'clamp(2rem, 3.97vw, 3rem)',
-          paddingBottom: 'clamp(2.5rem, 6.62vw, 5rem)',
+          marginTop: generateClamp(32, 48, 1208),
+          paddingBottom: generateClamp(40, 80, 1208),
         }}
       >
         <MarqueeCard />

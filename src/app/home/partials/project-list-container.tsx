@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { projectListData } from '@/constants/project-list-data';
+import { generateClamp } from '@/utils/clamp';
 
 import ProjectCard from './project-list/project-card';
 
@@ -9,8 +10,8 @@ const ProjectListContainer = () => {
     <section
       className='custom-container flex flex-col'
       style={{
-        paddingBlock: 'clamp(2.5rem, 6.62vw, 5rem)',
-        gap: 'clamp(2rem, 3.97vw, 3rem)',
+        paddingBlock: generateClamp(40, 80, 1208),
+        gap: generateClamp(32, 48, 1208),
       }}
       id='project-list'
     >

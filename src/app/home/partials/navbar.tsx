@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/sheet';
 
 import { navigationData } from '@/constants/navigation-data';
+import { generateClamp } from '@/utils/clamp';
 
 const Navbar = () => {
   const { scrollY } = useScroll();
@@ -60,7 +61,7 @@ const Navbar = () => {
     >
       <div
         className='flex-between custom-container'
-        style={{ height: 'clamp(4rem, 6.95vw, 5.25rem)' }}
+        style={{ height: generateClamp(64, 84, 1208) }}
       >
         <a href='#home'>
           <Image
@@ -69,8 +70,8 @@ const Navbar = () => {
             width={40}
             height={40}
             style={{
-              height: 'clamp(1.75rem, 3.31vw, 2.5rem)',
-              width: 'clamp(1.75rem, 3.31vw, 2.5rem)',
+              height: generateClamp(28, 40, 1208),
+              width: generateClamp(28, 40, 1208),
             }}
           />
         </a>

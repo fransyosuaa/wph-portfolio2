@@ -250,7 +250,7 @@ body {
     width: 100vw;
     height: auto;
     aspect-ratio: 1096 / 1934;
-    transform: translate(0%, -40%);
+    transform: translate(-10%, -40%);
     background-image: url('/assets/images/container/skill/ellipse-background.png');
   }
 
