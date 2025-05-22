@@ -4,6 +4,7 @@ import React from 'react';
 import CustomLink from '@/components/ui/custom-link';
 
 import { footerData } from '@/constants/footer-data';
+import { generateClamp } from '@/utils/clamp';
 
 import IconWrapper from './footer/icon-wrapper';
 
@@ -19,8 +20,8 @@ const Footer = () => {
               width={40}
               height={40}
               style={{
-                height: 'clamp(2.25rem, 3.31vw, 2.5rem)',
-                width: 'clamp(2.25rem, 3.31vw, 2.5rem)',
+                height: generateClamp(36, 40, 1208),
+                width: generateClamp(36, 40, 1208),
               }}
             />
           </a>

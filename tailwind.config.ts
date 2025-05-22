@@ -58,8 +58,8 @@ export default {
       animation: {
         marquee: 'marquee var(--duration) linear infinite',
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
-        orbit: 'orbit 10s linear infinite',
-        'counter-orbit': 'counter-orbit 10s linear infinite',
+        orbit: 'orbit 15s linear infinite',
+        'counter-orbit': 'counter-orbit 15s linear infinite',
       },
       keyframes: {
         marquee: {

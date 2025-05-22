@@ -4,14 +4,15 @@ import React from 'react';
 import CircleInfo from '@/components/ui/circle-info';
 
 import { aboutMeData } from '@/constants/about-me-data';
+import { generateClamp } from '@/utils/clamp';
 
 const AboutMeContainter = () => {
   return (
     <section
       className='custom-container -mt-10 flex flex-col'
       style={{
-        paddingBlock: 'clamp(2.5rem, 6.62vw, 5rem)',
-        gap: 'clamp(2.5rem, 6.62vw, 5rem)',
+        paddingBlock: generateClamp(40, 80, 1208),
+        gap: generateClamp(40, 80, 1208),
       }}
       id='about'
     >

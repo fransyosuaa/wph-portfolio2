@@ -23,7 +23,7 @@ export const skillData: SkillData[] = [
     src: HTML5,
     alt: 'html',
     angle: 237,
-    radius: 97,
+    radius: 94,
   },
   {
     name: 'Redux',
@@ -39,7 +39,7 @@ export const skillData: SkillData[] = [
     src: Javascript,
     alt: 'javascript',
     angle: 185,
-    radius: 97,
+    radius: 94,
   },
   {
     name: 'React',
@@ -55,7 +55,7 @@ export const skillData: SkillData[] = [
     src: CSS3,
     alt: 'css',
     angle: 320,
-    radius: 97,
+    radius: 94,
   },
   {
     name: 'Typescript',
