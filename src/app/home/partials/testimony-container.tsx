@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 
 import HeaderSection from '@/components/ui/header-section';
@@ -9,14 +8,7 @@ import MarqueeCard from './testimony/marquee-card';
 
 const TestimonyContainer = () => {
   return (
-    <section className='relative overflow-hidden'>
-      <Image
-        src='/assets/images/container/testimony/ellipse-background.png'
-        alt='ellipse background'
-        width={518}
-        height={517}
-        className='absolute -top-30 right-0 z-[-1]'
-      />
+    <section className='relative'>
       <div
         className='custom-container'
         style={{

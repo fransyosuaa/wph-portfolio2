@@ -9,7 +9,7 @@ import { generateClamp } from '@/utils/clamp';
 const AboutMeContainter = () => {
   return (
     <section
-      className='custom-container -mt-10 flex flex-col'
+      className='custom-container flex flex-col'
       style={{
         paddingBlock: generateClamp(40, 80, 1208),
         gap: generateClamp(40, 80, 1208),
@@ -23,13 +23,6 @@ const AboutMeContainter = () => {
           width={818}
           height={459}
         />
-        {/* <Image
-          src='/assets/icons/container/about-me/play-icon.png'
-          alt='play-icon'
-          width={70}
-          height={70}
-          className='absolute top-1/2 left-1/2 translate-x-[-50%] transform cursor-pointer'
-        /> */}
       </div>
       <div className='flex flex-wrap items-start gap-3 md:gap-0'>
         <h2 className='display-sm-extrabold md:display-2xl-extrabold flex-[2.7] basis-80'>
