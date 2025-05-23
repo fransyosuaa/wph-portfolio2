@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { generateClampInverse } from '@/utils/clamp';
+import { generateClamp, generateClampInverse } from '@/utils/clamp';
 
 type WaveProps = {
   heroBtnTop: number;
@@ -14,7 +14,12 @@ const Wave = ({ heroBtnTop }: WaveProps) => {
         top: `calc(${heroBtnTop}px + ${generateClampInverse(0, 32, 1208)})`,
       }}
     >
-      <div className='before-bg-wave relative aspect-[1440/381] w-full' />
+      <div
+        className='before-bg-wave relative w-full'
+        style={{
+          height: generateClamp(100, 381, 1208),
+        }}
+      />
     </section>
   );
 };

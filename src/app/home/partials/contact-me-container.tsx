@@ -4,7 +4,7 @@ import ContactForm from './contact-me/contact-form';
 
 const ContactMeContainer = () => {
   return (
-    <section className='before-bg-contact relative'>
+    <section className='before-bg-contact relative overflow-hidden'>
       <div
         className='custom-container flex-between flex-wrap gap-6 py-10 md:pt-20 md:pb-25'
         id='contact-me'

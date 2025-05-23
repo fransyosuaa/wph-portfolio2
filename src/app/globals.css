@@ -248,8 +248,8 @@ body {
   .before-bg-home-left-upper-ellipse::before {
     content: '';
     @apply pointer-events-none absolute top-0 right-1/2 z-[-1] bg-contain bg-no-repeat;
-    /* width: 461px;
-    height: 201px; */
+    width: 461px;
+    height: 201px;
     transform: translateX(-52%);
     background-image: url('/assets/images/hero/left-upper-purple-ellipse.png');
   }
@@ -257,8 +257,8 @@ body {
   .before-bg-home-right-ellipse::before {
     content: '';
     @apply pointer-events-none absolute top-0 right-0 z-[-1] bg-contain bg-no-repeat;
-    /* width: 1190px;
-    height: 1624px; */
+    width: 1190px;
+    height: 1624px;
     background-image: url('/assets/images/hero/right-purple-ellipse.png');
   }
 
@@ -275,9 +275,10 @@ body {
 
   .before-bg-wave::before {
     content: '';
-    @apply pointer-events-none absolute inset-0 z-[-1] bg-cover bg-repeat-y;
+    @apply pointer-events-none absolute inset-0 z-[-1] bg-repeat-x;
     background-image: url('/assets/images/waves.png');
-    background-size: 100% auto;
+    background-size: auto 100%;
+    background-position: top left;
   }
 
   .before-bg-skill::before {
