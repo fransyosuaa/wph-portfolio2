@@ -222,6 +222,7 @@ body {
   @apply bg-neutral-600 text-sm font-normal text-neutral-100;
 
   font-family: var(--font-poppins);
+  overflow-x: hidden;
 }
 
 @layer components {
@@ -244,9 +245,44 @@ body {
     @apply flex items-center justify-start;
   }
 
+  .before-bg-home-left-upper-ellipse::before {
+    content: '';
+    @apply pointer-events-none absolute top-0 right-1/2 z-[-1] bg-contain bg-no-repeat;
+    /* width: 461px;
+    height: 201px; */
+    transform: translateX(-52%);
+    background-image: url('/assets/images/hero/left-upper-purple-ellipse.png');
+  }
+
+  .before-bg-home-right-ellipse::before {
+    content: '';
+    @apply pointer-events-none absolute top-0 right-0 z-[-1] bg-contain bg-no-repeat;
+    /* width: 1190px;
+    height: 1624px; */
+    background-image: url('/assets/images/hero/right-purple-ellipse.png');
+  }
+
+  .before-bg-home-dot-decoration::before {
+    content: '';
+    @apply pointer-events-none absolute inset-0 z-[-1] bg-repeat opacity-70;
+    background-image: url('/assets/images/hero/hero-circle-decoration.png');
+  }
+
+  .before-bg-home-grid-decoration::before {
+    content: '';
+    @apply pointer-events-none absolute inset-0 z-[-1] bg-[linear-gradient(to_top_left,_transparent,_#262626),url('/assets/images/hero/hero-grid-decoration.png')] bg-repeat opacity-35;
+  }
+
+  .before-bg-wave::before {
+    content: '';
+    @apply pointer-events-none absolute inset-0 z-[-1] bg-cover bg-repeat-y;
+    background-image: url('/assets/images/waves.png');
+    background-size: 100% auto;
+  }
+
   .before-bg-skill::before {
     content: '';
-    @apply absolute top-0 left-0 z-[-1] bg-contain bg-no-repeat;
+    @apply pointer-events-none absolute top-0 left-0 z-[-1] bg-contain bg-no-repeat;
     width: 100vw;
     height: auto;
     aspect-ratio: 1096 / 1934;
@@ -256,12 +292,12 @@ body {
 
   .before-bg-contact-dialog::before {
     content: '';
-    @apply absolute -top-[7%] left-[12%] z-[-1] h-[507px] w-[360px] bg-[url('/assets/images/container/contact-me/purple-dialog.svg')] bg-contain bg-no-repeat;
+    @apply pointer-events-none absolute -top-[7%] left-[12%] z-[-1] h-[507px] w-[360px] bg-[url('/assets/images/container/contact-me/purple-dialog.svg')] bg-contain bg-no-repeat;
   }
 
   .before-bg-contact::before {
     content: '';
-    @apply absolute right-0 -bottom-[15%] z-[-1] h-[1277px] w-[1418px] bg-[url('/assets/images/container/contact-me/contact-section.svg')] bg-contain bg-no-repeat;
+    @apply pointer-events-none absolute right-0 -bottom-[15%] z-[-1] h-[1277px] w-[1418px] bg-[url('/assets/images/container/contact-me/contact-section.svg')] bg-contain bg-no-repeat;
   }
 
   @media (min-width: 768px) {

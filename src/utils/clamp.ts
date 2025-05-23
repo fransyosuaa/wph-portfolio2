@@ -13,14 +13,15 @@ export const generateClamp = (
 export const generateClampInverse = (
   desktopPx: number, // smaller value (for desktop)
   mobilePx: number, // larger value (for mobile)
-  containerMaxPx: number // max container width
+  containerMaxPx: number, // max container width
+  mobileMaxPx: number = 320 // max mobile width
 ): string => {
   // Convert pixel values to rem (assuming 1rem = 16px)
   const desktopRem = (desktopPx / 16).toFixed(2);
   const mobileRem = (mobilePx / 16).toFixed(2);
 
   // Define viewport range: from smallest (mobile) to largest (desktop)
-  const minVwPx = 320;
+  const minVwPx = mobileMaxPx;
   const maxVwPx = containerMaxPx;
 
   // Calculate how much the value should shrink per 1vw

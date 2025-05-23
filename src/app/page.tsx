@@ -1,5 +1,7 @@
 'use client';
 
+import { useEffect, useRef, useState } from 'react';
+
 import AboutMeContainer from './home/partials/about-me-container';
 import CareerJourneyContainer from './home/partials/career-journey-container';
 import ComparisonContainer from './home/partials/comparison-container';
@@ -14,11 +16,28 @@ import TestimonyContainer from './home/partials/testimony-container';
 import Wave from './home/partials/wave';
 
 const Home = () => {
+  const heroBtnRef = useRef<HTMLButtonElement>(null);
+  const [heroBtnRefY, setHeroBtnRefY] = useState<number>(0);
+
+  useEffect(() => {
+    const updatePosition = () => {
+      if (heroBtnRef.current) {
+        const rect = heroBtnRef.current.getBoundingClientRect();
+        const scrollY = window.scrollY || window.pageYOffset;
+        setHeroBtnRefY(rect.top + scrollY);
+      }
+    };
+
+    updatePosition();
+    window.addEventListener('resize', updatePosition);
+    return () => window.removeEventListener('resize', updatePosition);
+  }, []);
+
   return (
     <div className='relative'>
       <Navbar />
-      <Hero />
-      <Wave />
+      <Hero buttonRef={heroBtnRef} />
+      <Wave heroBtnTop={heroBtnRefY} />
       <AboutMeContainer />
       <CareerJourneyContainer />
       <SkillContainer />
