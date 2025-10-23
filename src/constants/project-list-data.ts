@@ -9,6 +9,15 @@ type Project = {
 
 export const projectListData: Project[] = [
   {
+    src: '/assets/images/container/project-list/toyota-models.png',
+    alt: 'toyota',
+    url: 'https://toyota-lulu.vercel.app/',
+    skills: ['React', 'Typescript', 'TailwindCss'],
+    name: 'Toyota Lulu',
+    description:
+      'A Toyota website for my sister, showcasing my latest skills, such as ReactJs (NextJs), Typescript, TailwindCss.',
+  },
+  {
     src: '/assets/images/container/project-list/tindog.png',
     alt: 'tindog',
     url: 'https://fransyosuaa.github.io/tindog/',
@@ -53,13 +62,13 @@ export const projectListData: Project[] = [
     description:
       'THE BIGGEST community event in Indonesia, which will run for 30 full days with the theme"Unity in Creativity"',
   },
-  {
-    src: '/assets/images/container/project-list/image1.png',
-    alt: 'landing page',
-    url: '#',
-    skills: ['React', 'HTML', 'CSS'],
-    name: 'Landing Page',
-    description:
-      'THE BIGGEST community event in Indonesia, which will run for 30 full days with the theme"Unity in Creativity"',
-  },
+  // {
+  //   src: '/assets/images/container/project-list/image1.png',
+  //   alt: 'landing page',
+  //   url: '#',
+  //   skills: ['React', 'HTML', 'CSS'],
+  //   name: 'Landing Page',
+  //   description:
+  //     'THE BIGGEST community event in Indonesia, which will run for 30 full days with the theme"Unity in Creativity"',
+  // },
 ];
